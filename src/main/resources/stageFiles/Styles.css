@@ -1,0 +1,175 @@
+.notification-bar>.pane {
+    -fx-background-color: #2E3348;
+    -fx-padding: 5 5 5 5;
+    -fx-background-insets: 0, 1, 2;
+    -fx-border-radius: 30;
+    -fx-background-radius: 18;
+}
+
+.notification-bar>.pane .title {
+    -fx-font-size: 1.333em; /*16px;*/
+    -fx-text-fill: WHITE;
+    -fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS";
+}
+
+.notification-bar>.pane .label {
+    -fx-font-size: 1em; /*12px;*/
+    -fx-text-fill: WHITE;
+    -fx-alignment: top-left;
+}
+
+/******************************************************************************
+ *
+ * Close button
+ *
+ *****************************************************************************/
+
+.notification-bar>.pane .close-button {
+    -fx-background-color: red;
+    -fx-background-insets: 0;
+    -fx-background-radius: 30;
+    -fx-padding: 0 0 0 0;
+    -fx-alignment: center;
+}
+
+.notification-bar>.pane .close-button:hover {
+    -fx-background-color: red;
+}
+
+.notification-bar>.pane .close-button>.graphic {
+    -fx-background-color: #fff;
+    -fx-scale-shape: false;
+    -fx-padding: 4.5 4.5 4.5 4.5; /* Graphic is 9x9 px */
+}
+
+.notification-bar>.pane .close-button:hover>.graphic {
+    -fx-translate-y: -0.5px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.8) , 15, 0 , 0 , 8 );
+}
+
+.notification-bar>.pane .close-button:pressed>.graphic {
+    -fx-translate-y: +0.5px;
+    -fx-effect: null;
+}
+
+.notification-bar>.pane .close-button>.graphic {
+    -fx-shape:
+            "M395.992,296.758l1.794-1.794l7.292,7.292l-1.795,1.794 L395.992,296.758z M403.256,294.992l1.794,1.794l-7.292,7.292l-1.794-1.795 L403.256,294.992z";
+}
+
+.button {
+    /* Трансформация при наведении */
+    -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-transition: all 0.3s ease;
+}
+
+.button:hover {
+    /* Эффект при наведении */
+    -fx-translate-y: -2px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.8) , 15, 0 , 0 , 8 );
+}
+
+.button:pressed {
+    /* Эффект при нажатии */
+    -fx-translate-y: +2px;
+    -fx-effect: null;
+}
+
+#exitButton {
+    -fx-background-image: url('/stageFiles/images/Cancel.png');
+    -fx-background-color: transparent;
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 50%;
+    -fx-transition: all 0.3s ease;
+}
+
+#exitButton:hover {
+    /* Эффект при наведении */
+    -fx-translate-y: -0.25px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.8) , 7, 0 , 0 , 4 );
+}
+
+#exitButton:pressed {
+    -fx-translate-y: +0.5px;
+    -fx-effect: null;
+}
+
+#backButton {
+    -fx-background-image: url('/stageFiles/images/back.png');
+    -fx-background-color: transparent;
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 50%;
+    -fx-transition: all 0.3s ease;
+}
+
+#backButton:hover {
+    /* Эффект при наведении */
+    -fx-translate-y: -0.25px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.8) , 7, 0 , 0 , 4 );
+}
+
+#backButton:pressed {
+    -fx-translate-y: +0.5px;
+    -fx-effect: null;
+}
+
+
+#openSlider {
+    -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-transition: all 0.3s ease;
+}
+
+#openSlider:hover {
+    -fx-translate-y: -1px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.8) , 15, 0 , 0 , 8 );
+}
+
+#openSlider:pressed {
+    /* Эффект при нажатии */
+    -fx-translate-y: +1px;
+    -fx-effect: null;
+}
+
+#closeSlider {
+    -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-transition: all 0.3s ease;
+}
+
+#closeSlider:hover {
+    -fx-translate-y: -1px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.8) , 15, 0 , 0 , 8 );
+}
+
+#closeSlider:pressed {
+    /* Эффект при нажатии */
+    -fx-translate-y: +1px;
+    -fx-effect: null;
+}
+
+
+.text-area .content {
+    -fx-background-radius: 0;
+    -fx-background-color: #2E3348;
+}
+
+.text-area {
+    -fx-background-color: #2E3348;
+    -fx-text-fill: WHITE;
+    -fx-control-inner-background: #1b191a;
+    -fx-text-box-border: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-prompt-text-fill: WHITE;
+}
+
+.split-pane-divider {
+    -fx-padding: 0.5; /* Устанавливаем толщину линии разделителя в пикселях */
+    -fx-background-color: WHITE; /* Цвет линии разделителя */
+    -fx-background-radius: 30;
+}
+

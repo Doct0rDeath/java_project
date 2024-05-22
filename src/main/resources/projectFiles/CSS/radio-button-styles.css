@@ -1,0 +1,30 @@
+.radio-button .radio {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-radius: 10;
+    -fx-fill: transparent; /* делает внутреннюю часть RadioButton прозрачной */
+    -fx-stroke: white; /* цвет обводки */
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: #9e5ce4; /* цвет внутренней части при выборе RadioButton */
+}
+
+.radio-button .dot {
+    -fx-border-radius: 10;
+    -fx-translate-y: -0.5;
+}
+
+.radio-button {
+    -fx-background-color: transparent;
+}
+
+.radio-button:hover {
+    -fx-translate-y: -1px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.8) , 15, 0 , 0 , 8 );
+}
+
+.radio-button:pressed {
+    -fx-translate-y: +1px;
+    -fx-effect: null;
+}
